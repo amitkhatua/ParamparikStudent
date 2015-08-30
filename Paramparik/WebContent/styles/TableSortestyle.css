@@ -1,0 +1,42 @@
+/* tables */
+table.tablesorter {
+	font-family:Georgia;
+	font-color: ffffff;
+	background-color: #CDCDCD;
+	/* margin:10px 0pt 0px; */
+	font-size: 8pt;
+	text-align: left;
+}
+table.tablesorter thead tr th, table.tablesorter tfoot tr th {
+	background:#4284e5 url('../Images/button_background.jpg') center top repeat-x;
+	font-size: 8pt;
+	padding: 4px; 
+	color:#fff
+}
+table.tablesorter thead tr .header {	
+	background:#4284e5 url('../images/button_background.jpg') center top repeat-x;	
+	cursor: pointer;
+}
+table.tablesorter tbody td {
+	color: #3D3D3D;
+	padding: 4px; 
+	background-color: #FFF;
+	vertical-align: top;
+}
+table.tablesorter tbody td:hover
+{
+	background-color: bbe0ff;
+}	
+table.tablesorter tbody tr.odd td {
+	background-color:#f6fbff;
+}
+table.tablesorter thead tr .headerSortUp {
+	background-image: url('../images/ascending.png');
+}
+table.tablesorter thead tr .headerSortDown {
+	background-image: url('../images/descending.png');
+}
+table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSortUp {
+background:#4284e5 url('../images/button_background.jpg') center top repeat-x;
+
+}

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+<constant name="struts.action.excludePattern" value="/servlets/.*" />
+     <constant name="struts.devMode" value="false" />
+    <constant name="struts.action.extension" value="action,do" />
+    <constant name="struts.custom.i18n.resources" value="test" />
+    <constant name="struts.convention.default.parent.package" value="default"/>
+	<package name="default" namespace="/" extends="struts-default">
+	
+	<result-types>
+			<result-type name="tiles"
+				class="org.apache.struts2.views.tiles.TilesResult" />
+			<result-type name="redirectAction"
+				class="org.apache.struts2.dispatcher.ServletActionRedirectResult" />
+			<result-type name="redirect"
+				class="org.apache.struts2.dispatcher.ServletRedirectResult" />
+
+		</result-types>
+		<interceptors>
+			<interceptor name="paramLoggingInterceptor" class="in.student.param.framework.ParamLoginInterceptor">
+			</interceptor>
+			<interceptor-stack name="loggingStack">
+				<interceptor-ref name="paramLoggingInterceptor" />
+				<interceptor-ref name="defaultStack" />
+			</interceptor-stack>
+			<interceptor-stack name="fileUploadStack">
+				<interceptor-ref name="fileUpload" />
+				<interceptor-ref name="basicStack" />
+				<interceptor-ref name="i18n" />
+			</interceptor-stack>
+		</interceptors>
+		<global-results>
+			<result name="invalid-session">/pages/common/sessiontimedoutlogout.jsp</result>
+		</global-results>
+		
+		 <action name="login" class="in.student.param.action.LoginAction" method="login">
+	         <result name="failure">/pages/s/login.jsp</result>
+			 <result name="home">/pages/s/home.jsp</result>
+	   </action>
+	    <action name="sessionTimeOut" class="in.student.param.action.LoginAction" method="sessionTimeOut">
+	         <result name="failure">/pages/s/login.jsp</result>
+	   </action>
+	   
+	    <action name="logout" class="in.student.param.action.LoginAction" method="logOut">
+	         <result name="logout">/pages/s/logout.jsp</result>
+	   </action>
+	    <action name="landing" class="in.student.param.action.LoginAction" method="landing">
+	         <result name="landing">/pages/s/login.jsp</result>
+	   </action>
+		 <action name="home" class="in.student.param.action.HomeAction" method="home">
+	         <result name="home">/pages/s/home.jsp</result>
+	   </action>
+	   <action name="homeLanding" class="in.student.param.action.HomeAction" method="homeLanding">
+	         <result name="homeLand">/pages/s/homeLand.jsp</result>
+	   </action>
+	   <action name="regList" class="in.student.param.action.HomeAction" method="registrationList">
+	         <result name="list">/pages/s/list.jsp</result>
+	   </action>
+	   
+	   
+	   
+	   
+	   
+	   
+	</package>
+	
+	<constant name="struts.devMode" value="false" />
+    <constant name="struts.action.extension" value="action," />
+    <constant name="struts.custom.i18n.resources" value="test" />
+    <constant name="struts.convention.default.parent.package" value="default"/>
+    
+</struts>

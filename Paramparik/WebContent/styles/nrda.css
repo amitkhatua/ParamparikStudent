@@ -1,0 +1,402 @@
+body {
+	margin: 0;
+	padding: 0;
+	background: #f2f2f2;
+}
+
+.mainBodyAlignment {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid;
+    font-family: Georgia;
+    font-size: 10pt;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 15px;
+    padding-left: 3px;
+    padding-right: 3px;
+    width: 85%;
+}
+
+.formAlignment {
+	padding-top: 15px;
+}
+
+.TextBoxMedium {
+	BORDER-RIGHT: Blue 1px solid;
+	BORDER-TOP: Blue 1px solid;
+	FONT-WEIGHT: normal;
+	FONT-SIZE: 11px;
+	BORDER-LEFT: Blue 1px solid;
+	WIDTH: 130px;
+	COLOR: #000;
+	BORDER-BOTTOM: Blue 1px solid;
+	HEIGHT: 20px;
+	BACKGROUND-COLOR: Azure;
+	font-family: Georgia;
+}
+.TextBoxSmall {
+	BORDER-RIGHT: Blue 1px solid;
+	BORDER-TOP: Blue 1px solid;
+	FONT-WEIGHT: normal;
+	FONT-SIZE: 11px;
+	BORDER-LEFT: Blue 1px solid;
+	WIDTH: 100px;
+	COLOR: #000;
+	BORDER-BOTTOM: Blue 1px solid;
+	HEIGHT: 20px;
+	BACKGROUND-COLOR: Azure;
+	font-family: Georgia;
+}
+.TextBoxLarge{
+	BORDER-RIGHT: Blue 1px solid;
+	BORDER-TOP: Blue 1px solid;
+	FONT-WEIGHT: normal;
+	FONT-SIZE: 11px;
+	BORDER-LEFT: Blue 1px solid;
+	WIDTH: 160px;
+	COLOR: #000;
+	BORDER-BOTTOM: Blue 1px solid;
+	HEIGHT: 20px;
+	BACKGROUND-COLOR: Azure;
+	font-family: Georgia;
+}
+.TextBoxAreaLarge{
+	BORDER-RIGHT: Blue 1px solid;
+	BORDER-TOP: Blue 1px solid;
+	FONT-WEIGHT: normal;
+	FONT-SIZE: 10px;
+	BORDER-LEFT: Blue 1px solid;
+	WIDTH: 500px;
+	COLOR: #000;
+	BORDER-BOTTOM: Blue 1px solid;
+	HEIGHT: 100px;
+	BACKGROUND-COLOR: Azure;
+	font-family: Georgia;
+}
+.FormBorder {
+    BORDER-RIGHT: silver 1px solid;
+     BORDER-TOP: silver 1px solid; 
+     BORDER-LEFT: silver 1px solid;
+      BORDER-BOTTOM: silver 1px solid
+}
+.FormText a{
+    font-family:Arial, Helvetica,  sans-serif;
+    font-size:12px;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    text-align: justify; 
+    color:#166c8f;
+    text-align:left;
+}
+.FormText a:hover{
+    text-decoration:underline;
+}
+.Label {
+    font-family: Georgia;
+    font-size: 11px;
+    font-weight: bold;
+    height: 20px;
+    text-align: center;
+}
+.LabelLight {
+    font-family: Georgia;
+    font-size: 11px;
+    height: 20px;
+    text-align: center;
+}
+.requiredTextBoxtMedium {
+	BORDER-RIGHT: Blue 1px solid; 
+	BORDER-TOP: Blue 1px solid; 
+	FONT-WEIGHT: normal; 
+	FONT-SIZE: 11px; 
+	BORDER-LEFT: Blue 1px solid; 
+	WIDTH: 160px; 
+	COLOR: #000; 
+	BORDER-BOTTOM: Blue 1px solid; 
+	HEIGHT: 20px; 
+	BACKGROUND-COLOR: Azure;
+	font-family: Georgia;
+}
+.requiredTextAreaMedium {
+	BORDER-RIGHT: Blue 1px solid; 
+	BORDER-TOP: Blue 1px solid; 
+	FONT-WEIGHT: normal; 
+	FONT-SIZE: 11px; 
+	BORDER-LEFT: Blue 1px solid; 
+	COLOR: #000; 
+	BORDER-BOTTOM: Blue 1px solid; 
+	BACKGROUND-COLOR: Azure;
+	font-family: Georgia;
+}
+
+.requiredSelectMedium {
+BORDER-RIGHT: Blue 1px solid; 
+	BORDER-TOP: Blue 1px solid; 
+	FONT-WEIGHT: normal; 
+	FONT-SIZE: 11px; 
+	BORDER-LEFT: Blue 1px solid; 
+	WIDTH: 80px; 
+	COLOR: #000; 
+	BORDER-BOTTOM: Blue 1px solid; 
+	HEIGHT: 20px; 
+	BACKGROUND-COLOR: Azure;
+	CURSOR: hand;
+	font-family: Georgia;
+}
+.TextBoxMediumEnabled {
+	BORDER-RIGHT: Blue 1px solid; 
+	BORDER-TOP: Blue 1px solid; 
+	FONT-WEIGHT: normal; 
+	FONT-SIZE: 11px; 
+	BORDER-LEFT: Blue 1px solid; 
+	WIDTH: 160px; 
+	COLOR: #000; 
+	BORDER-BOTTOM: Blue 1px solid; 
+	HEIGHT: 20px; 
+	BACKGROUND-COLOR: Azure;
+	font-family: Georgia;
+}
+.TextAreaMediumEnabled {
+	BORDER-RIGHT: Blue 1px solid; 
+	BORDER-TOP: Blue 1px solid; 
+	FONT-WEIGHT: normal; 
+	FONT-SIZE: 11px; 
+	BORDER-LEFT: Blue 1px solid; 
+	COLOR: #000; 
+	BORDER-BOTTOM: Blue 1px solid; 
+	BACKGROUND-COLOR: Azure;
+	font-family: Georgia;
+}
+.SelectMediumEnabled {
+	BORDER-RIGHT: Blue 1px solid; 
+	BORDER-TOP: Blue 1px solid; 
+	FONT-WEIGHT: normal; 
+	FONT-SIZE: 11px; 
+	BORDER-LEFT: Blue 1px solid; 
+	WIDTH: 160px; 
+	COLOR: #000; 
+	BORDER-BOTTOM: Blue 1px solid; 
+	HEIGHT: 20px; 
+	BACKGROUND-COLOR: Azure;
+	font-family: Georgia;
+}
+
+
+.TextAreaMediumDisable {
+	BORDER-RIGHT: Blue 1px solid; 
+	BORDER-TOP: Blue 1px solid; 
+	FONT-WEIGHT: normal; 
+	FONT-SIZE: 11px; 
+	BORDER-LEFT: Blue 1px solid; 
+	COLOR: #000; 
+	BORDER-BOTTOM: Blue 1px solid; 
+	BACKGROUND-COLOR: Azure;
+	font-family: Georgia;
+}
+.TextBoxMediumDisable {
+	BORDER-RIGHT: Blue 1px solid;
+	BORDER-TOP: Blue 1px solid;
+	FONT-WEIGHT: normal;
+	FONT-SIZE: 11px;
+	BORDER-LEFT: Blue 1px solid;
+	WIDTH: 160px;
+	COLOR: #000;
+	BORDER-BOTTOM: Blue 1px solid;
+	HEIGHT: 20px;
+	BACKGROUND-COLOR: Azure;
+	font-family: Georgia;
+}
+.SelectMediumDisable {
+	BORDER-RIGHT: Blue 1px solid; 
+	BORDER-LEFT: Blue 1px solid; 
+	BORDER-TOP: Blue 1px solid; 
+	BORDER-BOTTOM: Blue 1px solid;
+	FONT-WEIGHT: normal; 
+	FONT-SIZE: 11px; 
+	WIDTH: 160px; 
+	COLOR: #000; 
+	HEIGHT: 20px; 
+	BACKGROUND-COLOR: Azure;
+	font-family: Georgia;
+}
+.labelNormalError {
+    float: none;
+	color: red;
+	padding-left: .5em;
+	vertical-align: top;
+	font-size: 10px;
+}
+.labelNormal {
+  font-size: 10pt;
+  color: #404041;
+  background-position: left center;
+  padding-left: 2px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  text-decoration: none;
+}
+.DropDownSmall {
+	BORDER-RIGHT: Blue 1px solid; 
+	BORDER-TOP: Blue 1px solid; 
+	FONT-WEIGHT: normal; 
+	FONT-SIZE: 11px; 
+	BORDER-LEFT: Blue 1px solid; 
+	WIDTH: 100px; 
+	COLOR: #000; 
+	BORDER-BOTTOM: Blue 1px solid; 
+	HEIGHT: 20px; 
+	BACKGROUND-COLOR: Azure;
+	CURSOR: hand;
+	font-family: Georgia;
+}
+.DropDown {
+	BORDER-RIGHT: Blue 1px solid; 
+	BORDER-TOP: Blue 1px solid; 
+	FONT-WEIGHT: normal; 
+	FONT-SIZE: 11px; 
+	BORDER-LEFT: Blue 1px solid; 
+	WIDTH: 160px; 
+	COLOR: #000; 
+	BORDER-BOTTOM: Blue 1px solid; 
+	HEIGHT: 20px; 
+	BACKGROUND-COLOR: Azure;
+	CURSOR: hand;
+	font-family: Georgia;
+}
+
+.labelError {
+	font-size: 8pt;
+	color: red;
+	background-position: left center;
+	text-decoration: none;
+}
+
+.labelNormalStrong {
+	font-size: 8pt;
+	color: #404041;
+	background-position: left center;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-bottom: 5px;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+
+.Caption {
+	BORDER-RIGHT: silver 1px;
+	BORDER-TOP: silver 1px;
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 13px;
+	MARGIN: 0px 5px 5px 4px;
+	BORDER-LEFT: silver 1px;
+	COLOR: #555;
+	BORDER-BOTTOM: silver 1px solid;
+	BACKGROUND-COLOR: #bbddf8;
+	TEXT-ALIGN: center;
+	height: 18px;
+}
+
+.footer_band {
+	background: url("../Images/footer.jpg") repeat-x scroll left top #FFFCEF;
+	color: #B7E6FF;
+	font-family: Georgia;
+	font-size: 11px;
+	height: 26px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.footer_link {
+	color: #FFFFFF;
+	font-family: Georgia;
+	font-size: 11px;
+	text-decoration: none;
+}
+
+.Button {
+	background-image: url("../images/button_background.jpg");
+	background-repeat: repeat-x;
+	border: 1px solid #5577FF;
+	border-radius: 5px 5px 5px 5px;
+	color: #FFFFFF;
+	font-family: Georgia;
+	font-size: 11px;
+	font-weight: bold;
+	height: 24px;
+	text-align: center;
+	width: auto;
+	cursor: pointer;  
+}
+
+.TableNormal {
+	cellspacing: 3px;
+}
+
+a:hover {
+	COLOR: #5375a4;
+	TEXT-DECORATION: underline;
+	cursor: pointer
+}
+
+a {
+	COLOR: #003366;
+	TEXT-DECORATION: none
+}
+
+a.ank-link {
+	font-weight: bold;
+	color: #555555;
+	text-decoration: underline;
+}
+
+a.ank-link:hover {
+	color: #1697DF;
+	text-decoration: underline;
+}
+
+label.error {
+	float: none;
+	color: red;
+	padding-left: .5em;
+	vertical-align: top;
+	font-size: 10px;
+}
+
+.error {
+	float: none;
+	color: red;
+	padding-left: .5em;
+	vertical-align: top;
+	font-size: 10px;
+}
+.ModalBackground {
+	background-attachment: fixed;
+	background-color: #6D7B8D;
+	background-image: url("../Images/ajax-loader_blue.gif");
+	background-position: center center;
+	background-repeat: no-repeat;
+	display: none;
+	height: 100%;
+	left: 0;
+	min-height: 100%;
+	min-width: 100%;
+	opacity: 0.5;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 500;
+}
+
+.ThromdeBanner {
+border-bottom: 1px solid black;
+font-weight: bold;
+font-family: Georgia;
+background: #4284e5 url("../Images/button_background.jpg") center top repeat-x;
+font-size: 8pt;
+padding: 4px;
+color: #fff;
+	}
+
