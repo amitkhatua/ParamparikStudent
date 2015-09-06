@@ -61,9 +61,20 @@
 	         <result name="list">/pages/s/list.jsp</result>
 	   </action>
 	   
-	   
-	   
-	   
+	   <action name="studentDetails" class="in.student.param.action.StudentAction" method="getStudentDetails">
+	   <!-- <interceptor-ref name="loggingStack"></interceptor-ref>  -->
+	         <result name="newReg">/pages/s/studentdetails.jsp</result>
+	   </action>
+	   <action name="newRwgSubmit" class="in.student.param.action.StudentAction" method="newRregistrationSubmit">
+	   <!-- <interceptor-ref name="loggingStack"></interceptor-ref>
+	   <interceptor-ref name="fileUploadStack"></interceptor-ref>  -->
+	         <result name="newReg">/pages/s/studentdetails.jsp</result>
+	   </action>
+	   <action name="newReg" class="in.student.param.action.StudentAction" method="newRegistration">
+	   <!-- <interceptor-ref name="loggingStack"></interceptor-ref>
+	   <interceptor-ref name="fileUploadStack"></interceptor-ref> -->
+	         <result name="newReg">/pages/s/studentdetails.jsp</result>
+	   </action>
 	   
 	   
 	</package>

@@ -17,7 +17,7 @@
         <script src="<%=request.getContextPath()%>/scripts/jquery.form.js"></script>
         <script src="<%=request.getContextPath()%>/scripts/datetimepicker_css_modified.js"></script>
         <link href="<%=request.getContextPath()%>/styles/TableSortestyle.css" rel="stylesheet" type="text/css" />
-        <link href="<%=request.getContextPath()%>/styles/nrda.css" rel="stylesheet" type="text/css" />
+        <link href="<%=request.getContextPath()%>/styles/paramparik.css" rel="stylesheet" type="text/css" />
         <script src="<%=request.getContextPath()%>/scripts/jquery.numeric.js"></script>
         <script src="<%=request.getContextPath()%>/scripts/additional-methods.js"></script>
         <script src="<%=request.getContextPath()%>/scripts/additional-methods.min.js"></script>

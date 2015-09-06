@@ -3,6 +3,7 @@
  */
 package in.student.param.action;
 
+import in.student.param.business.StudentBusiness;
 import in.student.param.dto.StudentDTO;
 import in.student.param.framework.ParamAbstractAction;
 import in.student.param.util.ParamparikUtil;
@@ -29,7 +30,7 @@ public class HomeAction extends ParamAbstractAction{
 	 */
 	private static final long serialVersionUID = 1L;
 	private String returnURL;
-	private List<StudentDTO> regList = new ArrayList<StudentDTO>();
+	private List<StudentDTO> studentList = new ArrayList<StudentDTO>();
 	
 	//@Action(value = "/home")
 	public String home(){
@@ -56,7 +57,7 @@ public class HomeAction extends ParamAbstractAction{
 		logger.info("Enter registrationList()");
 		StudentDTO sDTO = new StudentDTO();
 		try {
-			//regList = StudentBusiness.getInstance().getStudentList(sDTO);
+			studentList = StudentBusiness.getInstance().getStudentList(sDTO);
 		} catch (Exception e) {
 			logger.error("At registrationList(): error details-> "+ ParamparikUtil.getStackTraceAsString(e));
 			addActionError(getText("System error occured. Please try again later."));
@@ -65,9 +66,14 @@ public class HomeAction extends ParamAbstractAction{
 		logger.info("Exit registrationList()");
 		return "list";
 	}
+	
+	
+	public List<StudentDTO> getStudentList() {
+		return studentList;
+	}
 
-	
-	
-	
+	public void setStudentList(List<StudentDTO> studentList) {
+		this.studentList = studentList;
+	}
 
 }

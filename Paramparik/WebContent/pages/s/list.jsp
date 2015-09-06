@@ -27,22 +27,29 @@
 						style="border-collapse: collapse">
 						<thead>
 							<tr>
-							    <th>Reg No.</th>
+							    <th>Enrolment No</th>
 							    <th>Full Name</th>
-								<th>Reg Date</th>
-								<th>Total Amount Taken</th>
+								<th>Birth Date</th>
+								<th>Gender</th>
+								<th>Contact No</th>
+								<th>Email</th>
+								<th>Enrolment Date</th>
 							</tr>
 						</thead>
 						<tbody>
-							<s:if test="regList != null && regList.size > 0">
-								<s:iterator value="regList" var="reg" status="regStatus">
+							<s:if test="studentList != null && studentList.size > 0">
+								<s:iterator value="studentList" var="sDTO" status="regStatus">
 										<tr class="<s:if test="#regStatus.odd == true ">odd</s:if><s:else>even</s:else>">
 										    <td width="10%">
-												<a href="#" onclick="loadCommonPageList('/regDetails.do?guaranteeDTO.bgNo=','<s:property value="%{#reg.bgNo}"/>');"><s:property value="%{#reg.bgNo}"/></a>
+												<a href="#" onclick="loadCommonPageList('/studentDetails.do?studentDTO.enrolmentId=','<s:property value="%{#sDTO.enrolmentId}"/>');"><s:property value="%{#sDTO.enrolmentId}"/></a>
 											</td>
-											<td width="10%"><s:property value="%{#reg.sectionName}"/></td>
-											<td width="30%"><span style="WORD-BREAK: BREAK-ALL;"><s:property value="%{#reg.workName}"/></span></td>
-											<td width="10%"><s:property value="%{#reg.amout}"/></td>
+											<td width="10%"><s:property value="%{#sDTO.name}"/></td>
+											<!-- <td width="30%"><span style="WORD-BREAK: BREAK-ALL;"><s:property value="%{#reg.workName}"/></span></td>  -->
+											<td width="10%"><s:property value="%{#sDTO.dob}"/></td>
+											<td width="10%"><s:property value="%{#sDTO.gender}"/></td>
+											<td width="10%"><s:property value="%{#sDTO.contactNo}"/></td>
+											<td width="10%"><s:property value="%{#sDTO.emailId}"/></td>
+											<td width="10%"><s:property value="%{#sDTO.dateOfEnrolment}"/></td>
 										</tr>
 								</s:iterator>
 							</s:if>
