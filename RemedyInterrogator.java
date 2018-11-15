@@ -32,7 +32,7 @@ public class RemedyInterrogator extends AbstractTaskExecutor {
 		throws Exception
 	{
     	// The Remedy ticket ID we want to query
-		// Updated by amit
+		// Updated by amit.
         String ticketId = (String) args.get("ticketId");
         String remedyConfig = (String) args.get("remedyConfig");
 
